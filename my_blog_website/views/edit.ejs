@@ -1,0 +1,18 @@
+<%- include("partials/header.ejs") %>
+
+<div class="container mt-4">
+    <h1>Edit Post</h1>
+    <form action="/update/<%= encodeURIComponent(post.title) %>" method="POST">
+        <div class="mb-3">
+            <label for="postTitle" class="form-label">Post Title</label>
+            <input type="text" class="form-control" id="postTitle" name="title" value="<%= post.title %>">
+        </div>
+        <div class="mb-3">
+            <label for="postContent" class="form-label">Post Content</label>
+            <textarea class="form-control" id="postContent" name="content" rows="3"><%= post.content %></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Update Post</button>
+    </form>
+</div>
+
+<%- include("partials/footer.ejs") %>
