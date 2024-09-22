@@ -5,3 +5,9 @@
     background-color: #f8f9fa; 
     border-radius: 10px; 
 }
+
+.brand-logo {
+    font-size:2rem;
+    font-weight: bold;
+    color: #308af1;
+}
