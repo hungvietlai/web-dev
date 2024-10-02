@@ -1,2 +1,5 @@
 node_modules
 npm-debug.log
+terraform/terraform.tfstate 
+terraform/terraform.tfstate.backup
+terraform/.*
